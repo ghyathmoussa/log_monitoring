@@ -25,8 +25,8 @@ def send_email_alert(line):
     
     # Email content
     msg = MIMEMultipart()
-    msg['From'] = 'ghyathmoussa11@gmail.com'
-    msg['To'] = 'ghyathmoussa@hotmail.com'
+    msg['From'] = 'your_mail@gmail.com'
+    msg['To'] = 'distenation@gmail.com'
     msg['Subject'] = 'Log Monitor Alert'
     message = f'ERROR found: {error_line}'
     msg.attach(MIMEText(message))
